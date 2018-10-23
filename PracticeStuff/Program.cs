@@ -26,6 +26,9 @@ namespace PracticeStuff
             //NumberPyramid pyramid = new NumberPyramid();
             //pyramid.PyramidOfNumbers();
 
+            MultiplicationTable multiples = new MultiplicationTable();
+            multiples.TableOfMultiples();
+
         }
 
         public static void StringtoChar()

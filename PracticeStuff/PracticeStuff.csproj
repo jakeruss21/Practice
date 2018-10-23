@@ -47,6 +47,7 @@
     <Compile Include="FibonacciSeqFinder.cs" />
     <Compile Include="IndexerPractice.cs" />
     <Compile Include="IsOdd.cs" />
+    <Compile Include="MultiplicationTable.cs" />
     <Compile Include="NumberPyramid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
