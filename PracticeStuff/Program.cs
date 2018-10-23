@@ -18,8 +18,11 @@ namespace PracticeStuff
             //IndexerPractice index = new IndexerPractice();
             //index.IndexPractice();
 
-            FibonacciSeqFinder fibb = new FibonacciSeqFinder();
-            fibb.FibFinder();
+            //FibonacciSeqFinder fibb = new FibonacciSeqFinder();
+            //fibb.FibFinder();
+
+            NumberPyramid pyramid = new NumberPyramid();
+            pyramid.PyramidOfNumbers();
 
         }
 
