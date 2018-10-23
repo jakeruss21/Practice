@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvenDetector.cs" />
+    <Compile Include="FibonacciSeqFinder.cs" />
+    <Compile Include="IndexerPractice.cs" />
+    <Compile Include="IsOdd.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
