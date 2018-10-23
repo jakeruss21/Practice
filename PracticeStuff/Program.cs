@@ -18,11 +18,13 @@ namespace PracticeStuff
             //IndexerPractice index = new IndexerPractice();
             //index.IndexPractice();
 
+            //Allow a user to select an element position in the Fib Sequence and then return the number in that position
             //FibonacciSeqFinder fibb = new FibonacciSeqFinder();
             //fibb.FibFinder();
 
-            NumberPyramid pyramid = new NumberPyramid();
-            pyramid.PyramidOfNumbers();
+            //Print out a pyramid of numbers of the user's choice
+            //NumberPyramid pyramid = new NumberPyramid();
+            //pyramid.PyramidOfNumbers();
 
         }
 

@@ -17,23 +17,31 @@ namespace PracticeStuff
 
             double[] fib = new double[find];  //Changed from an 'int' to a 'double' in case someone wants to pic a number above 47
 
-            for(int i = 0; i < find; i++)
+            if (find >= 1)
             {
-                if(i==0)
+                for (int i = 0; i < fib.Length; i++)
                 {
-                    fib[i] = 0;
+                    if (i == 0)
+                    {
+                        fib[i] = 0;
+                    }
+                    else if (i == 1)
+                    {
+                        fib[i] = 1;
+                    }
+                    else
+                    {
+                        fib[i] = fib[i - 1] + fib[i - 2];
+                    }
                 }
-                else if(i==1)
-                {
-                    fib[i] = 1;
-                }
-                else
-                {
-                    fib[i] = fib[i - 1] + fib[i - 2];
-                }
+
+                Console.WriteLine($"The element in position {find} of the Fibonacci sequence is: {fib[find - 1]}");
+            }
+            else
+            {
+                Console.WriteLine("There is no 0th element in the Fibonacci Sequence");
             }
 
-            Console.WriteLine($"Element {find} in the Fibonacci sequence is: {fib[find-1]}");
         }
 
     }
