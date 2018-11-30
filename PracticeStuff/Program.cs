@@ -55,14 +55,17 @@ namespace PracticeStuff
                     if (converted[i] == converted[j] && converted[i] != ' ') //checks for repeated characters - exactly
                     {
                         isRepeated = true;
+                        break;
                     }
                     else if (converted[i] + 32 == converted[j] && converted[i] != ' ')
                     {
                         isRepeated = true;
+                        break;
                     }
                     else if (converted[i] - 32 == converted[j] && converted[i] != ' ')
                     {
                         isRepeated = true;
+                        break;
                     }
                 }
             }
