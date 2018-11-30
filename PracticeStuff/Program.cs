@@ -12,7 +12,7 @@ namespace PracticeStuff
         {
 
             //Convert a string to a char and then compare it
-            //StringtoChar();
+            StringtoChar();
 
             //Use an indexer to determine if a number is even or odd
             //IndexerPractice index = new IndexerPractice();
@@ -26,8 +26,8 @@ namespace PracticeStuff
             //NumberPyramid pyramid = new NumberPyramid();
             //pyramid.PyramidOfNumbers();
 
-            MultiplicationTable multiples = new MultiplicationTable();
-            multiples.TableOfMultiples();
+            //MultiplicationTable multiples = new MultiplicationTable();
+            //multiples.TableOfMultiples();
 
         }
 
@@ -41,20 +41,29 @@ namespace PracticeStuff
 
             char[] converted = toConvert.ToCharArray();
 
-            //for (int i = 0; i < converted.Length; i++)
-            //{
-            //    Console.Write(converted[i]);
-            //}
-            //Console.WriteLine("");
+            //Used to check to make sure the conversion worked properly
+            foreach (char c in converted)
+            {
+                Console.Write(c);
+            }
+            Console.WriteLine("");
 
             for (int i = 0; i < converted.Length - 1; i++)
             {
                 for (int j = i + 1; j < converted.Length; j++)
                 {
-                    if (converted[i] == converted[j] && converted[i] != ' ')
+                    if (converted[i] == converted[j] && converted[i] != ' ') //checks for repeated characters - exactly
                     {
-                        isRepeated = true;                        
-                    }                    
+                        isRepeated = true;
+                    }
+                    else if (converted[i] + 32 == converted[j] && converted[i] != ' ')
+                    {
+                        isRepeated = true;
+                    }
+                    else if (converted[i] - 32 == converted[j] && converted[i] != ' ')
+                    {
+                        isRepeated = true;
+                    }
                 }
             }
 
