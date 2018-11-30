@@ -36,7 +36,7 @@ namespace PracticeStuff
             bool isRepeated = false;
             string toConvert;
 
-            Console.WriteLine("Please enter a string of characters and the program will tell you if there are any repeated characters");
+            Console.WriteLine("Please enter a string of letters and the program will tell you if there are any repeated characters");
             toConvert = Console.ReadLine();
 
             char[] converted = toConvert.ToCharArray();
@@ -48,6 +48,7 @@ namespace PracticeStuff
             }
             Console.WriteLine("");
 
+            //Checks to see if there are any repeated letters... doesn't work when you add characters that are not letters
             for (int i = 0; i < converted.Length - 1; i++)
             {
                 for (int j = i + 1; j < converted.Length; j++)
@@ -57,12 +58,12 @@ namespace PracticeStuff
                         isRepeated = true;
                         break;
                     }
-                    else if (converted[i] + 32 == converted[j] && converted[i] != ' ')
+                    else if (converted[i] + 32 == converted[j] && converted[i] != ' ') //checks for reapeated characters of letters from lower to upper cases
                     {
                         isRepeated = true;
                         break;
                     }
-                    else if (converted[i] - 32 == converted[j] && converted[i] != ' ')
+                    else if (converted[i] - 32 == converted[j] && converted[i] != ' ') //checks for repeated characters of letters from upper to lower cases
                     {
                         isRepeated = true;
                         break;
